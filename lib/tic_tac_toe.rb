@@ -84,7 +84,7 @@ end
   end
   
   def over?(board)
-    draw?(board) or won?(board) or full?(board)
+    draw?(board) || won?(board)
   end
   
   def winner(board)
