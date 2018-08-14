@@ -93,6 +93,9 @@ end
     if winner 
       index = winner[0]
       board[index]
+      
+    else
+      nil
     end
   end 
 
