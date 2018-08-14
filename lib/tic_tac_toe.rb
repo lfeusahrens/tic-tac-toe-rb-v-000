@@ -34,7 +34,7 @@ end
   user_input.to_i - 1
 end
 
-def move(board, index, value)
+def move(board, index, value = "X")
   board[index] = value
 end
 
@@ -44,7 +44,7 @@ end
   index = input_to_index(user_input)
   
  if valid_move?(board,index) 
-   move(board, index, value = "X")
+   move(board, index)
    display_board(board)
  else
    turn(board)
